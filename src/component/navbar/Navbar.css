@@ -1,0 +1,255 @@
+#nav-container {
+    margin: 0 0 100px;
+}
+
+#nav-head {
+    background-color: #000;
+    height: 60px;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+#nav-logo-container {
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#nav-logo {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+}
+
+#nav-logo:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(0.5)contrast(10.4)sepia(10)hue-rotate(100deg)saturate(70.9);
+    filter: brightness(0.5)contrast(10.4)sepia(20)hue-rotate(240deg)saturate(90.9)brightness(0.6);
+}
+
+#nav-profile {
+    float: left;
+}
+
+#nav-profile input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 3;
+
+    -webkit-touch-callout: none;
+}
+
+#nav-profile img {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+}
+
+#nav-toggle {
+    float: left;
+    display: block;
+    position: relative;
+    top: 18px;
+    left: 18px;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#nav-toggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 3;
+
+    -webkit-touch-callout: none;
+}
+
+#nav-toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: white;
+    border-radius: 3px;
+
+    z-index: 2;
+
+    transform-origin: 4px 0;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#nav-toggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-2px, 0);
+}
+
+#nav-toggle span:first-child {
+    transform-origin: 0 0;
+}
+
+#nav-toggle span:nth-last-child(2) {
+    transform-origin: 0 100%;
+}
+
+#nav-toggle input:checked ~ span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+#nav-toggle input:checked ~ span:nth-last-child(3) {
+    transform: rotate(45deg) translate(2px, 0);
+}
+
+#nav-menu {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 80px);
+    height: 100vh;
+    padding: 100px 40px 40px;
+    text-align: left;
+
+    background: #1e1e1e;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0 0;
+
+    transform: translate(-100%, 0);
+
+    transition: transform 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#nav-header p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 20px 0;
+    display: block;
+    font-size: 30px;
+}
+
+#nav-header div {
+    display: inline-block;
+    height: 7px;
+    width: 100%;
+    background-color: #630381;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: #777777;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 25px 0;
+    display: block;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    animation: nav-link-lighten 500ms;
+    animation-fill-mode: forwards;
+}
+
+.bottom-nav-links {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+.nav-button {
+    font-family: 'Roboto', sans-serif;
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 25px 0;
+    display: block;
+    font-size: 15px;
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    animation: nav-link-lighten 500ms;
+    animation-fill-mode: forwards;
+}
+
+.nav-icon-container {
+    display: inline-block;
+    width: 30px;
+}
+
+.nav-dropdown-icon-container {
+    display: block;
+    width: 30px;
+    float: left;
+    margin: 0;
+    text-align: left;
+}
+
+@keyframes nav-link-lighten {
+    0% { color: #777777 }
+    100% { color: #AAAAAA }
+}
+
+.nav-dropdown {
+    margin-top: -25px;
+    margin-left: 20px;
+    overflow: hidden;
+    width: calc(100% - 20px);
+    transition: max-height 300ms cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+@media screen and (min-width: 700px) {
+    .slide-container {
+        margin: 150px 100px 30px 100px;
+        width: calc(100% - 200px);
+    }
+
+    #nav-menu {
+        width: 300px;
+    }
+
+    #nav-container {
+        margin-bottom: 150px;
+    }
+}
