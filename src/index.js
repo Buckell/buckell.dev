@@ -1,3 +1,6 @@
+// Copyright (C) Max Goddard 2022
+// All rights reserved.
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";

@@ -1,3 +1,6 @@
+// Copyright (C) Max Goddard 2022
+// All rights reserved.
+
 import styled from "styled-components";
 import Icon from "component/text/Icon";
 

@@ -1,3 +1,6 @@
+// Copyright (C) Max Goddard 2022
+// All rights reserved.
+
 import styled from "styled-components";
 
 const SectionTitle = styled.h1`

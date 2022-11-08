@@ -1,3 +1,6 @@
+// Copyright (C) Max Goddard 2022
+// All rights reserved.
+
 import React, {createRef, useEffect} from "react";
 import "./SlideTitle.css"
 

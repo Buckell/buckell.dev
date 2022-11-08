@@ -1,3 +1,6 @@
+// Copyright (C) Max Goddard 2022
+// All rights reserved.
+
 import React from "react";
 import styled from "styled-components";
 import Icon from "../text/Icon";

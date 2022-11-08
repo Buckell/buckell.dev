@@ -1,3 +1,6 @@
+// Copyright (C) Max Goddard 2022
+// All rights reserved.
+
 import React, {createRef, useEffect, useState} from 'react';
 import "./Navbar.css";
 import logo from "logo.svg";

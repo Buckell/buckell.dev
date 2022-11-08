@@ -1,3 +1,6 @@
+// Copyright (C) Max Goddard 2022
+// All rights reserved.
+
 import React from "react";
 import "./Card.css";
 import defaultImage from "./default.png";
