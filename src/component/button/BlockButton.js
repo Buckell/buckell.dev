@@ -20,7 +20,7 @@ export default function BlockButton(props) {
         cursor: ${props.onClick || props.link ? "pointer" : "initial"};
       
         :hover {
-            background-color: ${props.color || "#b84dea"};
+            background-color: ${props.color || "#983dba"};
         }
       
         :active {

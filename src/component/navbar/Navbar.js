@@ -53,7 +53,7 @@ export default function Navbar() {
         <div id="nav-container">
             <div id="nav-head">
                 <div id="nav-toggle">
-                    <input type="checkbox" id="menu-toggle" checked={menuOpen} onClick={ () => setMenuOpen(!menuOpen) } />
+                    <input type="checkbox" id="menu-toggle" defaultChecked={menuOpen} onClick={ () => setMenuOpen(!menuOpen) } />
                     <span></span>
                     <span></span>
                     <span></span>

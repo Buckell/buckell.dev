@@ -53,11 +53,8 @@ export default function RebarPage() {
                     <BlockButton
                         color="#C22"
                         icon="fa fa-book"
+                        link="/rebar/docs"
                     >Documentation</BlockButton>
-
-                    <BlockButton
-                        color="#C22"
-                    >Test</BlockButton>
                 </ButtonRow>
                 <SectionTitle>Implementation Example</SectionTitle>
                 <SimpleDescription>
