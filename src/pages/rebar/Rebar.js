@@ -45,13 +45,13 @@ export default function RebarPage() {
                 />
                 <ButtonRow>
                     <BlockButton
-                        color="#C22"
+                        color="#911"
                         icon="fab fa-github"
                         link="https://github.com/Buckell/Rebar/tree/jit"
                     >GitHub</BlockButton>
 
                     <BlockButton
-                        color="#C22"
+                        color="#911"
                         icon="fa fa-book"
                         link="/rebar/docs"
                     >Documentation</BlockButton>
