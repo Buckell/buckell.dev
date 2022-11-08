@@ -19,6 +19,7 @@ root.render(
                   <Route index element={<HomePage />} />
                   <Route path="rebar" element={<RebarPage />} />
                   <Route path="404" element={<Error404Page />} />
+                  <Route path="*" element={<Error404Page />} />
               </Route>
           </Routes>
       </BrowserRouter>
