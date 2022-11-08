@@ -18,8 +18,8 @@ export default function Error404Page() {
             <Navbar />
             <ResponsiveContainer>
                 <SlideTitle
-                    top="This page was"
-                    bottom="Not Found"
+                    top="This page was not found."
+                    bottom="Error 404"
                 />
                 <ButtonRow>
                     <BlockButton
