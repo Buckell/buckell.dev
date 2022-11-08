@@ -85,6 +85,10 @@ export default function Navbar() {
                 <DropDown label="Featured Projects">
                     <NavLink link="https://github.com/Buckell/JavaLuaJIT">Java-Lua-JIT</NavLink>
                 </DropDown>
+
+                <div className="nav-bottom">
+                    <p>© Max Goddard 2022</p>
+                </div>
             </div>
             <div id="nav-close-bg"
                  style={{ display: menuOpen ? "block" : "none" }}
