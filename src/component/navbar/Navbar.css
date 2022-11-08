@@ -35,8 +35,19 @@
 
 #nav-logo:hover {
     cursor: pointer;
-    -webkit-filter: brightness(0.5)contrast(10.4)sepia(10)hue-rotate(100deg)saturate(70.9);
-    filter: brightness(0.5)contrast(10.4)sepia(20)hue-rotate(240deg)saturate(90.9)brightness(0.6);
+    animation: logo-fade 100ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-fade {
+    0% {
+        -webkit-filter: none;
+        filter: none;
+    }
+    100% {
+        -webkit-filter: brightness(0.7);
+        filter: brightness(0.7);
+    }
 }
 
 #nav-profile {
@@ -256,4 +267,13 @@
     #nav-container {
         margin-bottom: 150px;
     }
+}
+
+#nav-close-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000055;
 }

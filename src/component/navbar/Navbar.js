@@ -16,7 +16,9 @@ export default function Navbar() {
 
         let menu = document.getElementById("nav-menu");
         menu.style.transform = menuOpen ? "none" : "translate(-100%, 0)";
-    }, [menuOpen]);
+
+        document.getElementById("menu-toggle").checked = menuOpen;
+        }, [menuOpen]);
 
     function NavLink(props) {
         return (
@@ -84,15 +86,8 @@ export default function Navbar() {
                     <NavLink link="https://github.com/Buckell/JavaLuaJIT">Java-Lua-JIT</NavLink>
                 </DropDown>
             </div>
-            <div id="closeDiv"
-                 style={{
-                     display: menuOpen ? "block" : "none",
-                     position: "absolute",
-                     top: 0,
-                     left: 0,
-                     width: "100vw",
-                     height: "100vh"
-                 }}
+            <div id="nav-close-bg"
+                 style={{ display: menuOpen ? "block" : "none" }}
                  onClick={() => {
                      setMenuOpen(false);
                  }}
