@@ -60,7 +60,7 @@ export default function RebarPage() {
                 <SimpleDescription>
                     This is an example of implementing Rebar in a host C++ application.
                 </SimpleDescription>
-                <CodeBox language="cpp">
+                <CodeBox language="cpp" showLineNumbers>
                     {codeSample}
                 </CodeBox>
             </ResponsiveContainer>
